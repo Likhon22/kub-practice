@@ -1425,20 +1425,15 @@ kubectl get pods -n ingress-nginx
 
 ### Immediate Next Steps (This Week)
 
-**1. ✅ Push to GitHub**
 
-- This is a portfolio-worthy project!
-- Shows production-grade Kubernetes knowledge
-- Demonstrates security best practices
-
-**2. 📊 Add Monitoring (Recommended)**
+**1. 📊 Add Monitoring**
 
 - Install Prometheus + Grafana using Helm
 - Create dashboards for your services
 - See metrics that drive your HPA decisions
 - Essential for production operations
 
-**3. 🚀 Create Production Overlay**
+**2. 🚀 Create Production Overlay**
 
 - `overlays/prod/` with different settings
 - Higher replicas (5 instead of 2)
@@ -1447,20 +1442,20 @@ kubectl get pods -n ingress-nginx
 
 ### Medium Term (Next 2-3 Weeks)
 
-**4. 🔄 CI/CD Pipeline**
+**3. 🔄 CI/CD Pipeline**
 
 - GitHub Actions for automated deployments
 - Build Docker images on push
 - Deploy to dev/prod automatically
 - Run tests before deployment
 
-**5. 📦 Learn Helm**
+**4. 📦 Learn Helm**
 
 - Use Helm to install third-party apps (like Prometheus)
 - Understand when to use Helm vs Kustomize
 - Compare templating approaches
 
-**6. 📝 Centralized Logging**
+**5. 📝 Centralized Logging**
 
 - Install Grafana Loki
 - Aggregate logs from all pods
@@ -1469,21 +1464,21 @@ kubectl get pods -n ingress-nginx
 
 ### Long Term (When Needed)
 
-**7. 🕸️ Service Mesh (Istio)**
+**6. 🕸️ Service Mesh (Istio)**
 
 - Mutual TLS between services
 - Advanced traffic routing (canary, blue-green)
 - Circuit breakers and retries
 - Distributed tracing
 
-**8. 📈 Advanced Monitoring**
-
+**7. 📈 Advanced Monitoring**
+  
 - Prometheus alerts
 - PagerDuty integration
 - SLO/SLI monitoring
 - Custom metrics
 
-**9. 🔒 Enhanced Security**
+**8. 🔒 Enhanced Security**
 
 - Pod Security Policies/Standards
 - Image scanning (Trivy)
