@@ -1,0 +1,28 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - config/app-config.yaml
+  - secrets/app-secrets.yaml
+  - rbac/serviceaccounts.yaml
+  - rbac/roles.yaml
+  - rbac/rolebindings.yaml
+  - statefulsets/mongo-statefulset.yaml
+  - services/mongo-headless-service.yaml
+
+  - deployment/auth-deployment.yaml
+  - deployment/backend-deployment.yaml
+  - deployment/frontend-deployment.yaml
+
+  - services/auth-service.yaml
+  - services/backend-service.yaml
+  - services/frontend-service.yaml
+
+  - hpa/auth-hpa.yaml
+  - hpa/backend-hpa.yaml
+
+  - ingress.yaml
+
+  - networkpolicies/mongo-policy.yaml
+  - networkpolicies/backend-policy.yaml
+  - networkpolicies/auth-policy.yaml
+  - networkpolicies/frontend-policy.yaml

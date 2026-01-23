@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  MONGO_URL: "mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo,mongo-3.mongo,mongo-4.mongo:27017/?replicaSet=rs0"
+  LOG_LEVEL: "debug"
+  FEATURE_FLAG_NEW_UI: "true"
