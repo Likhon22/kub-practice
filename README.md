@@ -1820,3 +1820,4 @@ kubectl get pv,pvc -n dev
 ```bash
 kubectl delete -k kubernetes/overlays/dev
 ```
+

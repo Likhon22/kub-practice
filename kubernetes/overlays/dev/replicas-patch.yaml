@@ -3,18 +3,18 @@ kind: Deployment
 metadata:
   name: auth-deployment
 spec:
-  replicas: 3
+  replicas: 2
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deployment
 spec:
-  replicas: 3
+  replicas: 2
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-deployment
 spec:
-  replicas: 3
+  replicas: 2
