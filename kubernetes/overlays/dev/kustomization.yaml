@@ -11,3 +11,14 @@ labels:
 patches:
   - path: configmap-patch.yaml
   - path: replicas-patch.yaml
+
+images:
+  - name: likhon22/kub_prac_backend
+    newName: likhon22/backend
+    newTag: 600f8ccd428a05878a157b676d48c9caf2b50ab4
+  - name: likhon22/kub_prac_auth
+    newName: likhon22/auth
+    newTag: 483ca2d1d31df3b03351bad866bbcbbed8cbd67b
+  - name: likhon22/kub_prac_frontend
+    newName: likhon22/frontend
+    newTag: 483ca2d1d31df3b03351bad866bbcbbed8cbd67b

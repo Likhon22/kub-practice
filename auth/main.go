@@ -88,7 +88,7 @@ func main() {
 		w.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(w).Encode(Response{
 			Service: "auth",
-			Message: "Hello from Auth Service!",
+			Message: "Hello from Auth Service!,How are you doing",
 			Status:  "ok",
 		})
 	}))

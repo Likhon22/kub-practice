@@ -123,7 +123,7 @@ function App() {
 
       {/* Auth Service Card */}
       <div className="card">
-        <h2>Auth Service (Go)</h2>
+        <h2>Auth Service v2 (Go)</h2>
         <p>
           Base URL: <code>{AUTH_URL}</code>
         </p>
